@@ -3,8 +3,7 @@ using System;
 public class CalculateCost {
     private int sold;
     //public int soldBaht;
-    public int soldDelivery;
-    public int DeliveryBaht;
+
 
     public CalculateCost(int sold) {
         this.sold = sold;

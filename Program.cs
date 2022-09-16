@@ -24,10 +24,25 @@
         PrintCostInformation (week3);
         PrintCostInformation (week4);
 
+        CalculateSoldDelivery week01 = new CalculateSoldDelivery(78);
+        CalculateSoldDelivery week02 = new CalculateSoldDelivery(96);
+        CalculateSoldDelivery week03 = new CalculateSoldDelivery(159);
+        CalculateSoldDelivery week04 = new CalculateSoldDelivery(271);
+        
+
+        PrintCostDelivery (week01);
+        PrintCostDelivery (week02);
+        PrintCostDelivery (week03);
+        PrintCostDelivery (week04);
+
     }
 
     static void PrintCostInformation (CalculateCost weekly) {
         Console.WriteLine("฿{0}",weekly.Calculate(127));
     }
-    
+
+    static void PrintCostDelivery (CalculateSoldDelivery weekly) {
+        Console.WriteLine("฿{0}",weekly.CalculateDelivery(357));
+    }
+
 }
